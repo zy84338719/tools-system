@@ -1,0 +1,7 @@
+# base image
+FROM centos
+COPY ./proxy_linux  /home/proxy/
+WORKDIR /home/proxy
+
+ENTRYPOINT ["/home/proxy/proxy_linux","-bind=${SOURCE_IP_PORT}","-backend=${TARGET_IP_PORT}" # 定参
+CMD [] # 变参

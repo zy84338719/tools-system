@@ -1,0 +1,9 @@
+version: "3"
+services:
+  proxy:
+    image: zy84338719/proxy
+    network_mode:
+    - "host"
+    environment:
+    - SOURCE_IP_PORT=172.30.0.51:8500
+    - TARGET_IP_PORT=127.0.0.1:8500
