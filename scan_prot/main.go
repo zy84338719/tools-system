@@ -16,7 +16,7 @@ func main() {
 		os.Exit(1)
 	}
 	addr := os.Args[1]
-	fmt.Println("[+]Scaning", "108.186.167.122")
+	fmt.Println("[+]Scaning", addr)
 	wg := sync.WaitGroup{}
 	gortNums := make(chan struct{}, 100)
 	//pro := []string{"80", "3306", "22", "3389", "1433", "8080", "25", "443", "8000", "21"}
